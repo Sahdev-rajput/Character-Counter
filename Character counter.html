@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character counter</title>
+    <style>
+        #body
+        {
+            background-color: antiquewhite;
+        }
+        #heading
+        {
+            margin-top: 100px;
+        }
+        #display
+        {
+            color:red;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body id="body">
+    <center>
+    <h1 style="color:red" id="heading">Character Counter</h1>
+    <p style="font-weight: bolder;">Enter the string: </p>
+    <form>
+        <input type="text" placeholder="Enter a string" id="character"  style="width:500px">
+        <!-- <button id="char" onclick="clicked()">Check</button> -->
+        <input type="button" onclick="clicked()" value="Check">
+    </form><br>
+    <p id="display"></p>
+</center>
+    <script>
+    function clicked()
+    {
+        var a=document.getElementById("character").value;
+        var b=a.length;
+        document.getElementById("display").innerHTML="The number of characters in the string are: "+b;
+        // document.writeln(b);
+    }
+   </script>
+
+    
+</body>
+</html>
